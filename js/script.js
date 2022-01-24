@@ -1,6 +1,10 @@
 
 $(document).ready(function(){
 
+    $(window).on('load',function(){
+        $('.preloader').addClass('complete');
+    });
+
 
     $(window).on('load',function(){
       $('.preloader').addClass('complete')
@@ -40,6 +44,46 @@ var waypoint=new Waypoint({
     offset:'90%'
 });
 
+// adding fadeInup animation to child of div with class .way-col
+var $child = $('.lightspeedin').children();
+$child.each(function(){
+    var self= $(this);
+    $(this).waypoint(function(){
+        self.addClass('animated rubberBand');
+    },{offset: '90%'});
+});
+
+var $child = $('.fadefromleft').children();
+$child.each(function(){
+    var self= $(this);
+    $(this).waypoint(function(){
+        self.addClass('animated fadeInRight');
+    },{offset: '90%'});
+});
+
+var $child = $('.fadefromRight').children();
+$child.each(function(){
+    var self= $(this);
+    $(this).waypoint(function(){
+        self.addClass('animated fadeInLeft');
+    },{offset: '90%'});
+});
+
+var $child = $('.rollin').children();
+$child.each(function(){
+    var self= $(this);
+    $(this).waypoint(function(){
+        self.addClass('animated rollIn');
+    },{offset: '90%'});
+});
+
+var $child = $('.slideinup').children();
+$child.each(function(){
+    var self= $(this);
+    $(this).waypoint(function(){
+        self.addClass('animated slideInUp');
+    },{offset: '90%'});
+});
 var filterizd = $('.filter-container').filterizr({
     animationDuration:.5,
 })
@@ -52,6 +96,11 @@ autoplay:true,
 autoplayTimeout:8000,
 items:1
 });
+
+$('a').smoothScroll({
+
+    speed:2000,
+  });
 
 });
     

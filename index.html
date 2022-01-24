@@ -11,14 +11,19 @@
     <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/animate.css">
     <title>Naresh | Portfolio template</title>
 </head>
 <body>
 
+    <div class="preloader">
+        <div class="circle"></div>
+    </div>
+
     <nav class="navbar navbar-expand-md  sticky  fixed-top r-nav">
         <div class="container">
     
-          <a class="navbar-brand animated fadeInLeft" href="#">Naresh</a>
+          <a class="navbar-brand animated fadeInLeft" href="#"><img class="img-thumbnailchellam" src="img/n.png" alt="my icon"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarId" >
             <span><i class="fas fa-bars hamburger"></i></span>
           </button>
@@ -51,11 +56,11 @@
     <div class="container-fluid header-content">
         <div class="row">
             <div class="col text-center">
-                <div class="content-box">
+                <div class="content-box animated fadeInup wrapper">
                     <h4>Welcome</h4>
-                    <h1>I'M <span class="element"></span> </h1>
+                    <h1 class="element-360"> I'M <span class="element element-360" style="color:#ee8683;font-weight:bold"></span> </h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptatum nobis ratione numquam ullam doloremque eos eum impedit, debitis possimus voluptatibus autem repellendus harum odio ad dolore dolores eaque? Suscipit corrupti neque sit. Maiores laborum, consectetur illum quasi tempore architecto impedit. Voluptates adipisci optio earum soluta in omnis illum officiis.</p>
-                    <a href="#" class="btn">Download CV</a>
+                    <a href="Naresh Kumar Resume.pdf" class="btn">Download CV</a>
                 </div>
 
             </div>
@@ -66,10 +71,10 @@
 <section class="about r-p" id="about">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 lightspeedin">
                 <img src="img/profile.jpg" class="img-fluid img-thumbnail" alt="profile picture">
             </div>
-            <div class="col-lg-6 mt-5 mt-lg-0">
+            <div class="col-lg-6 mt-5 mt-lg-0 fadefromleft">
                 <h2>About Me</h2>
                 <h4>Hola! I'M <span style="color:#e96f85"></span> Naresh Kumar</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aspernatur?</p>
@@ -91,10 +96,10 @@
 <section class="exp-class" id="exp-id">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 d-flex justify-content-center align-items-center">
+            <div class="col-md-6 d-flex justify-content-center align-items-center fadefromRight">
                 <h3 class="">My Skills</h3>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 fadefromleft">
                 <label>HTML</label>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width:0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">95%</div>
@@ -122,7 +127,7 @@
 
 <!-- Services -->
 
-<section class="services-class bg-sec r-p" id="services-id">
+<section class="services-class bg-sec r-p" id="services">
     <div class="container text-center">
         <div class="row">
             <div class="col">
@@ -238,7 +243,7 @@
  <section class="hire-me r-p" id="hire-id">
      <div class="container text-center">
          <div class="row">
-             <div class="col">
+             <div class="col fadefromRight">
                  <h3 class="mb-4">I am Available for Freelance</h3>
                  <a href="#" class="btn r-btn">Hire Me</a>
              </div>
@@ -248,11 +253,11 @@
 
 <!-- Testimony Section -->
 
-<section class="testimony-class r-p bg-sec" id="testimony-id">
+<section class="testimony-class r-p bg-sec" id="testimony">
 <div class="container text-center">
-    <div class="row">
+    <div class="row fadefromleft">
         <div class="col">
-            <h2>Testimony</h2>
+            <h2 class="tmony">Testimony</h2>
             <p>What people say.</p>
         </div>
     </div>
@@ -306,11 +311,11 @@
 
 <!-- Work with img gallery-->
 
-<section class="work r-p">
+<section class="work r-p" id="work">
     <div class="container text-center">
-        <div class="row">
+        <div class="row lightspeedin">
             <div class="col mb-5">
-                <h2>Work</h2>
+                <h2 class="tmony">Work</h2>
                 <p>What i have created.</p>
             </div>
         </div>
@@ -362,11 +367,11 @@
 
 <!-- Contact Section -->
 
-<section class="contact r-p bg-sec">
+<section class="contact r-p bg-sec" id="contact">
     <div class="container text-center">
-        <div class="row">
+        <div class="row rollin">
             <div class="col">
-                <h2>Contact Us</h2>
+                <h2 class="tmony">Contact Us</h2>
                 <p>Feel free to contact me.</p>
             </div>
         </div>
@@ -401,7 +406,7 @@
         </div>
 
             <div class="row mt-5">
-                <div class="col">
+                <div class="col slideinup">
                     <form>
                         <div class="form-row">
                             <div class="form-group col-md-6">
@@ -428,7 +433,7 @@
 <!-- Footer Section -->
 
 <footer>
-    <div class="container h-100 d-flex align-items-center justify-content-center">
+    <div class="container h-100 d-flex align-items-center justify-content-center slideinup">
         <div class="row">
             <div class="col">
                 <div class="r-icon text-center mt-3">

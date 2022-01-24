@@ -7,6 +7,17 @@
   padding: 0;
 }
 
+.img-thumbnailchellam{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  border-style: none;
+  padding: 0;
+  margin: 10px;
+}
+
 h1,
 h2,
 h3,
@@ -36,6 +47,73 @@ p {
   padding: 5px 20px;
   background-color: #ee8683 !important;
   color: white !important;
+}
+
+/* pre-loader */
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 99998;
+}
+
+.preloader:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background: #000;
+  transition: 1s;
+}
+
+.preloader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  background: #000;
+  transition: 1s;
+}
+
+.preloader.complete:before {
+  bottom: -50%;
+}
+
+.preloader.complete:after {
+  top: -50%;
+}
+
+.preloader.complete {
+  visibility: hidden;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid rgba(255, 255, 255, 0.1);
+  border-top: 10px solid #ee8683;
+  animation: animate 1.5s infinite linear;
+  z-index: 99999;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 /* Navigation */
@@ -114,7 +192,7 @@ header {
 }
 
 .content-box h4 {
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .content-box h1 {
@@ -226,39 +304,118 @@ header {
 
 /* Work carousel card-wrapper */
 
-.work .card-wrapper{
-    padding-top: 15px;
-    padding-bottom: 15px;
+.work .card-wrapper {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /* Contact-us */
 
-.contact .r-icon{
-    font-size: 50px;
-    text-align: center;
+.contact .r-icon {
+  font-size: 50px;
+  text-align: center;
 }
 
 /* Footer Section */
 
-footer{
-    height: 200px;
-    background-color: #333333;
+footer {
+  height: 200px;
+  background-color: #333333;
 }
 
-footer .r-icon a{
-    font-size: 21px;
-    color: #848484; padding: 10px 15px;
-    border: 1px solid #848484;
-    border-radius: 50%;
-    margin-bottom: 20px;
+footer .r-icon a {
+  font-size: 21px;
+  color: #848484;
+  padding: 10px 15px;
+  border: 1px solid #848484;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 
-footer .r-icon a:hover{
-    border: 1px solid #eee;
-    color: #eee;
-    transition: .5s all;
+footer .r-icon a:hover {
+  border: 1px solid #eee;
+  color: #eee;
+  transition: 0.5s all;
 }
 
-footer .text-muted{
-    margin-top: 21px;
+footer .text-muted {
+  margin-top: 21px;
+}
+
+/* icon-coloring */
+
+.fa-facebook:before {
+  content: "\f09a";
+  color: dodgerblue;
+}
+
+.fa-instagram:before {
+  content: "\f16d";
+  color: pink;
+}
+.fa-whatsapp:before {
+  content: "\f232";
+  color: greenyellow;
+}
+
+.fa-linkedin-in:before {
+  content: "\f0e1";
+  color: cornflowerblue;
+}
+.fa-at:before {
+  content: "\f1fa";
+  color: coral;
+}
+
+/* Media query */
+@media (max-width: 360px) {
+  .list-inline {
+    padding-left: 25px;
+    padding-top: 15px;
+    list-style: none;
+  }
+
+  .r-p {
+    padding-top: 37px;
+    padding-bottom: 32px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5rem;
+    padding-right: -11px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.tmony{
+    padding: 0;
+}
+
+nav .navbar-brand {
+    font-size: 25px;
+    margin-left: 10px;
+    color: white;
+}
+
+.wrapper h1,span{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.wrapper h4{
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+.img-thumbnailchellam {
+  width: 51px;
+  height: 43px;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  border-style: none;
+  padding: 0;
+  margin: 10px;
+}
+
 }
