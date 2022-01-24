@@ -17,7 +17,7 @@ $(document).ready(function(){
     });
 
     var typed =new Typed(".element",{
-        strings: ["Naresh Kumar", "a Developer","a Freelancer","an Freasher"],smartBackspace:true,
+        strings: ["Naresh Kumar", "a Developer","a Freelancer","a Freasher"],smartBackspace:true,
         typeSpeed:100,
         backSpeed:100,
         loop:true,
@@ -39,6 +39,10 @@ var waypoint=new Waypoint({
     },
     offset:'90%'
 });
+
+var filterizd = $('.filter-container').filterizr({
+    animationDuration:.5,
+})
 
 // Owl Carousel
 
