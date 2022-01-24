@@ -230,3 +230,10 @@ header {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+/* Contact-us */
+
+.contact .r-icon{
+    font-size: 50px;
+    text-align: center;
+}
